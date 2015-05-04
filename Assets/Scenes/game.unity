@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3191636392ecf2a41ba803e7a9440b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabProjectile: {fileID: 130756, guid: 096a7341feb146f47b225c0c56a2c3d6, type: 2}
 --- !u!1 &284102801
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,8 +312,8 @@ Camera:
   m_GameObject: {fileID: 1301626722}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: .727941155, g: .727941155, b: .727941155, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
