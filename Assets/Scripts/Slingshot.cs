@@ -4,7 +4,7 @@ using System.Collections;
 public class Slingshot : MonoBehaviour {
 
 	public GameObject prefabProjectile;
-	public float velocityMult = 4.0;
+	public float velocityMult = 4.0f;
 	private GameObject LaunchPoint;
 	private bool aimingMode;
 	private GameObject projectile;
@@ -50,11 +50,12 @@ public class Slingshot : MonoBehaviour {
 
 		projectile.transform.position = launchPos + mouseDelta;
 	
-	if (Input.GetMouseButtonUp (0)) {
-			aimingMode = false;
-			projectile.GetComponent<Rigidbody> ().isKinematic = false;
-			projectile.GetComponent<Rigidbody> ().velocity = - mouseDelta*velocityMult;
-	}
+		if (Input.GetMouseButtonUp (0)) {
+				aimingMode = false;
+				projectile.GetComponent<Rigidbody> ().isKinematic = false;
+				projectile.GetComponent<Rigidbody> ().velocity = - mouseDelta*velocityMult;
+				FollowCam.S.poi = projectile;
+		}
 	
 	}
 
